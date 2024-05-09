@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="registration-form">
+        <h2>Formulario de registro</h2>
+
+        <form action="">
+            <label for="firstname">Nombre:</label>
+            <input type="text" id="firstname" name="firstname" minlength="4" required>
+            <div class="error" id="errorFirstname"></div>
+            <br>
+
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="lastname" minlength="4" required>
+            <div class="error" id="errorLastname"></div>
+            <br>
+
+            <label for="Document">Documento: </label>
+            <input type="text" id="Document" name="Document" minlength="6" required>
+            <div class="error" id="errorDocument"></div>
+            <br>
+
+
+            <label for="Email">Email: </label>
+            <input type="email" id="Email" name="Email" required>
+            <div class="error" id="errorEmail"></div>
+            <br>
+
+
+            <label for="Age">Edad: </label>
+            <input type="number" id="Age" name="Age" required>
+            <div class="error" id="errorAge"></div>
+            <br>
+
+            <label for=Activity>Actividad</label>
+            <select name="Activity" id="Activity">
+                <option value="">Seleccione...</option>
+                <option value="Tecnología">Tecnología</option>
+                <option value="Programación">Programación</option>
+                <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+                <option value="Sistemas">Sistemas</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <div class="error" id="errorActivity"></div>
+            <br>
+
+            <label for=Education>Nivel de educación</label>
+            <select name="Education" id="Education">
+                <option value="">Seleccione...</option>
+                <option value="Primario">Primario</option>
+                <option value="Secundario incompleto">Secundario incompleto</option>
+                <option value="Secundario completo">Secundario completo</option>
+                <option value="Terciario">Terciario</option>
+                <option value="Univesitario incompleto">Univesitario incompleto</option>
+                <option value="Univesitario completo">Univesitario completo</option>
+            </select>
+            <div class="error" id="errorActivity"></div>
+            <br>
+
+            <label class="inline">
+                <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                Acepto terminos y condiciones
+            </label>
+            <div class="error" id="errorAcceptTerms"></div>
+            <br>
+
+            <label class="inline">Quiero: </label>
+            <input type="checkbox" name="publicidad" id="news" value="novedades">
+            <label class="inline" for="news">Novedades</label>
+            <input type="checkbox" name="publicidad" id="offers" value="novedades">
+            <label class="inline" for="offers">Ofertas</label>
+            <br>
+
+            <input type="submit" value="Registrarse">
+
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
