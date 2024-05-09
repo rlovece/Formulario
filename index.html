@@ -10,19 +10,19 @@
     <div id="registration-form">
         <h2>Formulario de registro</h2>
 
-        <form action="">
+        <form id="form" novalidate>
             <label for="firstname">Nombre:</label>
-            <input type="text" id="firstname" name="firstname" minlength="4" required>
+            <input type="text" id="firstname" name="firstname" minlength="3" required>
             <div class="error" id="errorFirstname"></div>
             <br>
 
             <label for="lastname">Apellido:</label>
-            <input type="text" id="lastname" name="lastname" minlength="4" required>
+            <input type="text" id="lastname" name="lastname" minlength="3" required>
             <div class="error" id="errorLastname"></div>
             <br>
 
             <label for="Document">Documento: </label>
-            <input type="text" id="Document" name="Document" minlength="6" required>
+            <input type="text" id="Document" name="Document" minlength="3" required>
             <div class="error" id="errorDocument"></div>
             <br>
 
@@ -60,7 +60,7 @@
                 <option value="Univesitario incompleto">Univesitario incompleto</option>
                 <option value="Univesitario completo">Univesitario completo</option>
             </select>
-            <div class="error" id="errorActivity"></div>
+            <div class="error" id="errorEducation"></div>
             <br>
 
             <label class="inline">

@@ -22,7 +22,7 @@ h2{
 
 label{
     display: block;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 label.inline{
@@ -66,6 +66,5 @@ input[type="submit"]:hover{
 .error{
     color: red;
     font-size: 0.75rem;
-    visibility: hidden;
 }
 
